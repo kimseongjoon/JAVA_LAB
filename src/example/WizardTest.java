@@ -47,11 +47,11 @@ class GreatWizard extends Wizard {
 
     @Override
     public String toString() {
-        return String.format("[대마법사] %s{HP: %d, MP: %d, SHIELD: %d)", this.name, this.hp, this.mp, this.shield);
+        return String.format("[대마법사] %s{HP: %d, MP: %d, SHIELD: %d)", super.name, super.hp, super.mp, this.shield);
     }
 
     @Override
     public void energeVolt() {
-        System.out.printf("%s의 에너지볼트!(대마법사 버프로 데미지 +30 추가)\n", this.name);
+        System.out.printf("%s의 에너지볼트!(대마법사 버프로 데미지 +30 추가)\n", super.name);
     }
 }

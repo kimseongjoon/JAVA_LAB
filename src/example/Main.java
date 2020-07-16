@@ -65,18 +65,18 @@ package example;
 
 public class Main {
     public static void main(String[] args) {
-        Car c = new Car("티코");
-        Car t = new Truck("봉고", 1.5);
+        Car1 c = new Car1("티코");
+        Car1 t = new Truck("봉고", 1.5);
 
         System.out.println(c.toString());
         System.out.println(t.toString());
     }
 }
 
-class Car {
+class Car1 {
     protected String name;
 
-    public Car(String name) {
+    public Car1(String name) {
         this.name = name;
     }
 
@@ -85,7 +85,7 @@ class Car {
     }
 }
 
-class Truck extends Car {
+class Truck extends Car1 {
     protected double ton;
 
     public Truck(String name, double ton) {
