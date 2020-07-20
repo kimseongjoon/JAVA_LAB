@@ -19,7 +19,7 @@ interface Friend {
 }
 
 class Artist implements Friend{
-    String name;
+    private String name;
 
     public Artist(String name) {
         this.name = name;
@@ -33,7 +33,7 @@ class Artist implements Friend{
 }
 
 class Architect implements Friend{
-    String name;
+    private String name;
 
     public Architect(String name) {
         this.name = name;
@@ -46,7 +46,7 @@ class Architect implements Friend{
 }
 
 class Developer implements Friend{
-    String name;
+    private String name;
 
     public Developer(String name) {
         this.name = name;
@@ -59,7 +59,8 @@ class Developer implements Friend{
 }
 
 class Lawyer implements Friend{
-    String name;
+
+    private String name;
 
     public Lawyer(String name) {
         this.name = name;
