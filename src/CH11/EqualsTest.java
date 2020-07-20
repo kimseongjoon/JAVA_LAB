@@ -31,9 +31,9 @@ class Student {
 
     @Override
     public int hashCode() {
-        return Objects.hash(studentID, studentName);
+        // 학생아이디로 리턴
+        return studentID;
     }
-
 
     @Override
     public boolean equals(Object obj) {
@@ -49,18 +49,6 @@ class Student {
         return false;
     }
 
-    //    @Override
-//    public boolean equals(Object obj) {
-//
-//        if (obj instanceof Student){
-//            Student anotherStudent = (Student) obj;
-//            if ( (this.studentID == anotherStudent.studentID) && (this.studentName == anotherStudent.studentName) ) {
-//                return true;
-//            }
-//        }
-//
-//        return false;
-//    }
 }
 
 public class EqualsTest {

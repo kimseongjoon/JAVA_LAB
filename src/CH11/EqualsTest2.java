@@ -18,5 +18,9 @@ public class EqualsTest2 {
         } else {
             System.out.println("lee와 sang는 동일하지 않습니다.");
         }
+
+        System.out.println("lee의 hashcode() : " + lee.hashCode());
+        System.out.println("sang의 hashcode() : " + sang.hashCode());
+        System.out.println("kim의 hashcode() : " + kim.hashCode());
     }
 }
