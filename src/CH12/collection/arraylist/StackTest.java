@@ -19,6 +19,7 @@ class MyStack {
         return (arrayStack.remove(len - 1)); // 인덱스번호는 len-1까지
     }
 }
+
 public class StackTest {
     public static void main(String[] args) {
         // stack 객체 생성 => 어레이리스트 자동 생성
