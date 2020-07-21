@@ -2,7 +2,7 @@ package CH12.collection;
 
 import java.util.Objects;
 
-public class Member {
+public class Member implements Comparable<Member> {
     private int memberID; // 회원 ID
     private String memberName; // 회원 이름
 
@@ -48,5 +48,14 @@ public class Member {
     @Override
     public int hashCode() {
         return memberID;
+    }
+
+    @Override
+    public int compareTo(Member other) {
+        // Member 객체를 비교할 수 있도록 코드를 만듭니다.
+        return (this.memberID - other.memberID) * (-1);
+        // 리턴값이 양수이면 더 큰 객체
+        // 리턴값이 음수이면 작은 객체
+        // 오름차순 정렬
     }
 }

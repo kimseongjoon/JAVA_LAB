@@ -18,5 +18,11 @@ public class MemberHashSetTest {
         Member hong = new Member(1003, "홍길동");
         memberHashSet.addMember(hong);
         memberHashSet.showAllMember();
+
+        Member x = new Member(1005, "이순신");
+        memberHashSet.addMember(x);
+        memberHashSet.addMember(x);
+        memberHashSet.addMember(x);
+        memberHashSet.showAllMember();
     }
 }
