@@ -1,8 +1,8 @@
 package CH11;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import java.util.ArrayList;
 
-class  MyDog {
+class MyDog {
     String name;
     String type;
 
@@ -16,6 +16,7 @@ class  MyDog {
         return type + " " + name;
     }
 }
+
 public class Q4 {
     public static void main(String[] args) {
         MyDog dog = new MyDog("멍멍이", "진돗개");
