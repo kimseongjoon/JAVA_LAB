@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Lotto {
     public static void main(String[] args) {
+        // 객체 생성 => 로또넘버가 같이 생성됨
         LottoMachine machine = new LottoMachine();
 
         int[] numbers = machine.getLottoNumbers();
@@ -26,12 +27,10 @@ class LottoMachine {
         int[] pickedNumbers = new int[6];
         Random rand = new Random();
 
-
         for (int i = 0; i < 6; i++) {
             pickedNumbers[i] = rand.nextInt(45) + 1;
             for (int j = 0; j < i; j++) {
-                if (pickedNumbers[i] == pickedNumbers[j])
-                {
+                if (pickedNumbers[i] == pickedNumbers[j]) {
                     i--;
                 }
             }
