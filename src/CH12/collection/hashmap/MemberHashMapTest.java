@@ -11,9 +11,9 @@ public class MemberHashMapTest {
         mem.addMember(new Member(1003, "박서훤"));
         mem.addMember(new Member(1004, "홍길동"));
 
-        mem.showAllMember();
+        mem.showAllMember2();
 
         mem.removeMember(1004);
-        mem.showAllMember();
+        mem.showAllMember2();
     }
 }
