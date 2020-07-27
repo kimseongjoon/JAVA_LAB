@@ -1,7 +1,5 @@
 package CH13;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +31,10 @@ public class LibraryTest {
 
         int total = bookList.stream().mapToInt(book -> book.getPrice()).sum();
 
+        System.out.println("모든 책 가격의 합은 " + total + "원 입니다.");
+        System.out.println();
+
+        System.out.println("== 이만원이 넘는 책들은 다음과 같습니다. ==");
         bookList.stream().filter(book -> book.getPrice() >= 20000).map(book -> book.getName()).sorted().forEach(name -> System.out.print(name + " "));
     }
 }
