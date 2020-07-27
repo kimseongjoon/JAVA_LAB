@@ -21,13 +21,18 @@ class OutClass { // 내부클래스 외부의 클래스
     }
 
     public void usingClass() {
-        inClass.inTest();
+        inClass.inTest(); // 내부 클래스의 instance 메소드 실행
     }
 }
+
 public class InnerTest {
     public static void main(String[] args) {
-        OutClass outClass = new OutClass();
+        OutClass outClass1 = new OutClass();
         System.out.println("외부클래스 이용하여 내부클래스 기능 호출");
-        outClass.usingClass();
+        outClass1.usingClass();
+
+        // 내부클래스 생성 사용방법
+        OutClass out = new OutClass(); // 외부 클래스 생성
+        OutClass.InClass in = out.new InClass(); //
     }
 }
